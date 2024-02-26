@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" readonly class="screen" id="screen">
+        <div class="keyboard">
+            <div class="btnRow">
+                <button type="button" class="btn" onclick="clearScreen()">C</button>
+                <button type="button" class="btn" onclick="addToScreen('7')">7</button>
+                <button type="button" class="btn" onclick="addToScreen('4')">4</button>
+                <button type="button" class="btn" onclick="addToScreen('1')">1</button>
+                <button type="button" class="btn">-/+</button>
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn">CE</button>
+                <button type="button" class="btn" onclick="addToScreen('8')">8</button>
+                <button type="button" class="btn" onclick="addToScreen('5')">5</button>
+                <button type="button" class="btn" onclick="addToScreen('2')">2</button>
+                <button type="button" class="btn" onclick="addToScreen('0')">0</button>
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn" onclick="backspace()">&larr;</button>
+                <button type="button" class="btn" onclick="addToScreen('9')">9</button>
+                <button type="button" class="btn" onclick="addToScreen('6')">6</button>
+                <button type="button" class="btn" onclick="addToScreen('3')">3</button>
+                <button type="button" class="btn" onclick="addDecimal()">,</button>
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn" onclick="addSign('/')">&divide;</button>
+                <button type="button" class="btn" onclick="addSign('*')">*</button>
+                <button type="button" class="btn" onclick="addSign('-')">-</button>
+                <button type="button" class="btn" onclick="addSign('+')">+</button>
+                <button type="button" class="btn" onclick="response()">=</button></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
